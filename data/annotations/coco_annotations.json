@@ -1,0 +1,1222 @@
+{
+  "info": {
+    "description": "Macadamia Nut Quality Grading Benchmark Dataset",
+    "year": 2026
+  },
+  "categories": [
+    {
+      "id": 0,
+      "name": "Healthy / Premium"
+    },
+    {
+      "id": 1,
+      "name": "Cracked / Broken"
+    },
+    {
+      "id": 2,
+      "name": "Discolored / Brown Center"
+    },
+    {
+      "id": 3,
+      "name": "Moldy / Insect Damaged"
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "file_name": "batch_01_premium.jpg",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "id": 2,
+      "file_name": "batch_02_commercial.jpg",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "id": 3,
+      "file_name": "batch_03_high_defect.jpg",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "id": 4,
+      "file_name": "batch_04_mixed_sizes.jpg",
+      "width": 800,
+      "height": 800
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        416,
+        530,
+        118,
+        112
+      ],
+      "area": 13216,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 17.7,
+        "size_grade": "Small",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        270,
+        388,
+        126,
+        128
+      ],
+      "area": 16128,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.37,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 3,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        143,
+        509,
+        96,
+        94
+      ],
+      "area": 9024,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.54,
+        "size_grade": "Small",
+        "defect_label": "Discolored / Brown Center"
+      }
+    },
+    {
+      "id": 4,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        384,
+        292,
+        128,
+        134
+      ],
+      "area": 17152,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.9,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 5,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        163,
+        714,
+        124,
+        130
+      ],
+      "area": 16120,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.95,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 6,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        486,
+        129,
+        128,
+        132
+      ],
+      "area": 16896,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.59,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 7,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        522,
+        274,
+        124,
+        112
+      ],
+      "area": 13888,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.22,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 8,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        319,
+        625,
+        116,
+        122
+      ],
+      "area": 14152,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.28,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 9,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        562,
+        577,
+        150,
+        144
+      ],
+      "area": 21600,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 23.62,
+        "size_grade": "Large",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 10,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        51,
+        140,
+        170,
+        152
+      ],
+      "area": 25840,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 24.48,
+        "size_grade": "Large",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 11,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        613,
+        412,
+        130,
+        122
+      ],
+      "area": 15860,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.12,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 12,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        147,
+        337,
+        110,
+        110
+      ],
+      "area": 12100,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 16.9,
+        "size_grade": "Small",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 13,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        636,
+        100,
+        138,
+        134
+      ],
+      "area": 18492,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 22.24,
+        "size_grade": "Large",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 14,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        728,
+        253,
+        98,
+        96
+      ],
+      "area": 9408,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.77,
+        "size_grade": "Small",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 15,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        302,
+        103,
+        124,
+        120
+      ],
+      "area": 14880,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.4,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 16,
+      "image_id": 1,
+      "category_id": 0,
+      "bbox": [
+        664,
+        708,
+        146,
+        128
+      ],
+      "area": 18688,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 21.36,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 17,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        724,
+        672,
+        126,
+        122
+      ],
+      "area": 15372,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.81,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 18,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        645,
+        93,
+        128,
+        130
+      ],
+      "area": 16640,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.74,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 19,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        237,
+        440,
+        140,
+        128
+      ],
+      "area": 17920,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.89,
+        "size_grade": "Medium",
+        "defect_label": "Cracked / Broken"
+      }
+    },
+    {
+      "id": 20,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        101,
+        242,
+        126,
+        112
+      ],
+      "area": 14112,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.51,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 21,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        280,
+        596,
+        124,
+        124
+      ],
+      "area": 15376,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.0,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 22,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        439,
+        250,
+        122,
+        126
+      ],
+      "area": 15372,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.68,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 23,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        264,
+        125,
+        124,
+        124
+      ],
+      "area": 15376,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.75,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 24,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        373,
+        701,
+        128,
+        134
+      ],
+      "area": 17152,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.76,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 25,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        126,
+        589,
+        126,
+        122
+      ],
+      "area": 15372,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.13,
+        "size_grade": "Medium",
+        "defect_label": "Cracked / Broken"
+      }
+    },
+    {
+      "id": 26,
+      "image_id": 2,
+      "category_id": 2,
+      "bbox": [
+        542,
+        598,
+        122,
+        116
+      ],
+      "area": 14152,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.12,
+        "size_grade": "Medium",
+        "defect_label": "Discolored / Brown Center"
+      }
+    },
+    {
+      "id": 27,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        56,
+        478,
+        100,
+        102
+      ],
+      "area": 10200,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 16.09,
+        "size_grade": "Small",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 28,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        647,
+        337,
+        126,
+        128
+      ],
+      "area": 16128,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.8,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 29,
+      "image_id": 2,
+      "category_id": 2,
+      "bbox": [
+        705,
+        481,
+        112,
+        116
+      ],
+      "area": 12992,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 17.8,
+        "size_grade": "Small",
+        "defect_label": "Discolored / Brown Center"
+      }
+    },
+    {
+      "id": 30,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        395,
+        407,
+        134,
+        126
+      ],
+      "area": 16884,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.9,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 31,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        509,
+        80,
+        128,
+        112
+      ],
+      "area": 14336,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.52,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 32,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        75,
+        60,
+        154,
+        138
+      ],
+      "area": 21252,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 22.9,
+        "size_grade": "Large",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 33,
+      "image_id": 2,
+      "category_id": 0,
+      "bbox": [
+        244,
+        287,
+        128,
+        126
+      ],
+      "area": 16128,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.69,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 34,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        270,
+        133,
+        136,
+        128
+      ],
+      "area": 17408,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.79,
+        "size_grade": "Medium",
+        "defect_label": "Moldy / Insect Damaged"
+      }
+    },
+    {
+      "id": 35,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        522,
+        397,
+        134,
+        132
+      ],
+      "area": 17688,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.56,
+        "size_grade": "Medium",
+        "defect_label": "Moldy / Insect Damaged"
+      }
+    },
+    {
+      "id": 36,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        275,
+        646,
+        102,
+        100
+      ],
+      "area": 10200,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.23,
+        "size_grade": "Small",
+        "defect_label": "Moldy / Insect Damaged"
+      }
+    },
+    {
+      "id": 37,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        157,
+        179,
+        106,
+        104
+      ],
+      "area": 11024,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.63,
+        "size_grade": "Small",
+        "defect_label": "Moldy / Insect Damaged"
+      }
+    },
+    {
+      "id": 38,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        677,
+        305,
+        146,
+        134
+      ],
+      "area": 19564,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.89,
+        "size_grade": "Medium",
+        "defect_label": "Cracked / Broken"
+      }
+    },
+    {
+      "id": 39,
+      "image_id": 3,
+      "category_id": 0,
+      "bbox": [
+        685,
+        574,
+        98,
+        98
+      ],
+      "area": 9604,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.61,
+        "size_grade": "Small",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 40,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        520,
+        593,
+        124,
+        120
+      ],
+      "area": 14880,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.21,
+        "size_grade": "Medium",
+        "defect_label": "Cracked / Broken"
+      }
+    },
+    {
+      "id": 41,
+      "image_id": 3,
+      "category_id": 0,
+      "bbox": [
+        149,
+        722,
+        120,
+        122
+      ],
+      "area": 14640,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.35,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 42,
+      "image_id": 3,
+      "category_id": 2,
+      "bbox": [
+        149,
+        442,
+        102,
+        106
+      ],
+      "area": 10812,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 16.36,
+        "size_grade": "Small",
+        "defect_label": "Discolored / Brown Center"
+      }
+    },
+    {
+      "id": 43,
+      "image_id": 3,
+      "category_id": 0,
+      "bbox": [
+        506,
+        94,
+        130,
+        134
+      ],
+      "area": 17420,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.35,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 44,
+      "image_id": 3,
+      "category_id": 0,
+      "bbox": [
+        273,
+        286,
+        120,
+        114
+      ],
+      "area": 13680,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.24,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 45,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        75,
+        537,
+        106,
+        102
+      ],
+      "area": 10812,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.24,
+        "size_grade": "Small",
+        "defect_label": "Moldy / Insect Damaged"
+      }
+    },
+    {
+      "id": 46,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        362,
+        456,
+        108,
+        100
+      ],
+      "area": 10800,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.41,
+        "size_grade": "Small",
+        "defect_label": "Cracked / Broken"
+      }
+    },
+    {
+      "id": 47,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        659,
+        81,
+        108,
+        108
+      ],
+      "area": 11664,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 16.02,
+        "size_grade": "Small",
+        "defect_label": "Moldy / Insect Damaged"
+      }
+    },
+    {
+      "id": 48,
+      "image_id": 3,
+      "category_id": 2,
+      "bbox": [
+        708,
+        698,
+        142,
+        130
+      ],
+      "area": 18460,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.58,
+        "size_grade": "Medium",
+        "defect_label": "Discolored / Brown Center"
+      }
+    },
+    {
+      "id": 49,
+      "image_id": 4,
+      "category_id": 3,
+      "bbox": [
+        283,
+        452,
+        160,
+        156
+      ],
+      "area": 24960,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 24.62,
+        "size_grade": "Large",
+        "defect_label": "Moldy / Insect Damaged"
+      }
+    },
+    {
+      "id": 50,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        71,
+        222,
+        130,
+        134
+      ],
+      "area": 17420,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 21.1,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 51,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        711,
+        111,
+        96,
+        100
+      ],
+      "area": 9600,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.21,
+        "size_grade": "Small",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 52,
+      "image_id": 4,
+      "category_id": 2,
+      "bbox": [
+        379,
+        688,
+        130,
+        124
+      ],
+      "area": 16120,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 19.61,
+        "size_grade": "Medium",
+        "defect_label": "Discolored / Brown Center"
+      }
+    },
+    {
+      "id": 53,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        506,
+        602,
+        120,
+        114
+      ],
+      "area": 13680,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.35,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 54,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        84,
+        660,
+        172,
+        166
+      ],
+      "area": 28552,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 25.04,
+        "size_grade": "Large",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 55,
+      "image_id": 4,
+      "category_id": 1,
+      "bbox": [
+        622,
+        474,
+        106,
+        100
+      ],
+      "area": 10600,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.46,
+        "size_grade": "Small",
+        "defect_label": "Cracked / Broken"
+      }
+    },
+    {
+      "id": 56,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        605,
+        256,
+        106,
+        104
+      ],
+      "area": 11024,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 16.74,
+        "size_grade": "Small",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 57,
+      "image_id": 4,
+      "category_id": 1,
+      "bbox": [
+        439,
+        84,
+        106,
+        106
+      ],
+      "area": 11236,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 17.02,
+        "size_grade": "Small",
+        "defect_label": "Cracked / Broken"
+      }
+    },
+    {
+      "id": 58,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        206,
+        122,
+        110,
+        110
+      ],
+      "area": 12100,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 16.75,
+        "size_grade": "Small",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 59,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        686,
+        628,
+        148,
+        142
+      ],
+      "area": 21016,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 23.0,
+        "size_grade": "Large",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 60,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        495,
+        366,
+        124,
+        134
+      ],
+      "area": 16616,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 20.17,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 61,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        716,
+        364,
+        122,
+        116
+      ],
+      "area": 14152,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.29,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 62,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        63,
+        480,
+        118,
+        116
+      ],
+      "area": 13688,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 18.8,
+        "size_grade": "Medium",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 63,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        233,
+        292,
+        98,
+        104
+      ],
+      "area": 10192,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.46,
+        "size_grade": "Small",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 64,
+      "image_id": 4,
+      "category_id": 0,
+      "bbox": [
+        147,
+        380,
+        102,
+        102
+      ],
+      "area": 10404,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 15.65,
+        "size_grade": "Small",
+        "defect_label": "Healthy / Premium"
+      }
+    },
+    {
+      "id": 65,
+      "image_id": 4,
+      "category_id": 1,
+      "bbox": [
+        427,
+        211,
+        144,
+        142
+      ],
+      "area": 20448,
+      "iscrowd": 0,
+      "attributes": {
+        "diameter_mm": 21.37,
+        "size_grade": "Medium",
+        "defect_label": "Cracked / Broken"
+      }
+    }
+  ]
+}

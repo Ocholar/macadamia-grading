@@ -1,0 +1,141 @@
+# ==============================================================================
+# Macadamia Quality Grading AI System - Configuration
+# ==============================================================================
+
+app:
+  name: "Macadamia Quality Grading AI"
+  version: "1.0.0"
+  description: "Automated optical grading, metric sizing, defect detection, and XAI reporting for macadamia processing."
+  debug: false
+
+# Hardware & Execution Environment
+execution:
+  device: "auto"  # "cpu", "cuda", or "auto"
+  num_threads: 4
+  onnx_execution_provider: "CPUExecutionProvider"
+
+# Calibration & Metric Conversion
+calibration:
+  # Default pixel-to-metric ratio (pixels per mm). Calibrated at standard bench height.
+  default_pixels_per_mm: 6.5
+  unit: "mm"
+  # Optional reference object (e.g., standard calibration coin/circle)
+  reference_object:
+    enabled: false
+    diameter_mm: 20.0
+    color_marker_hsv_low: [0, 100, 100]
+    color_marker_hsv_high: [10, 255, 255]
+
+# Preprocessing Pipeline
+preprocessing:
+  input_dimensions: [640, 640]  # Standard width, height
+  normalize_lighting: true
+  clahe:
+    clip_limit: 2.5
+    tile_grid_size: [8, 8]
+  white_balance:
+    enabled: true
+    method: "gray_world"  # "gray_world" or "white_patch"
+  background_segmentation:
+    method: "adaptive_otsu_hsv"  # "adaptive_otsu_hsv", "grabcut", or "color_range"
+    # Expected background mat color (e.g. blue mat, green mat, or dark table)
+    mat_type: "auto"  # "auto", "blue_mat", "green_mat", "dark_mat", "light_mat"
+    morphology_kernel_size: 5
+    min_nut_area_px: 400
+    max_nut_area_px: 150000
+
+# Sizing Classification (Industry Standards: Kernel / In-Shell)
+sizing:
+  categories:
+    small:
+      name: "Small"
+      max_diameter_mm: 18.0
+      color: [64, 158, 255]     # BGR / Visual representation
+    medium:
+      name: "Medium"
+      min_diameter_mm: 18.0
+      max_diameter_mm: 22.0
+      color: [103, 194, 58]
+    large:
+      name: "Large"
+      min_diameter_mm: 22.0
+      color: [230, 162, 60]
+
+# Defect Classification
+defects:
+  classes:
+    0:
+      id: "healthy"
+      label: "Healthy / Premium"
+      description: "Smooth, uniform ivory/cream kernel, no cracks, necrosis or pest damage"
+      color_bgr: [60, 179, 113]   # Green
+      is_defective: false
+      tolerance_pct_grade1: 100.0
+    1:
+      id: "cracked"
+      label: "Cracked / Broken"
+      description: "Visible fracture, fissure lines, chipped or broken kernel"
+      color_bgr: [30, 144, 255]   # Orange/Blue highlight
+      is_defective: true
+      tolerance_pct_grade1: 2.0
+    2:
+      id: "discolored"
+      label: "Discolored / Brown Center"
+      description: "Internal browning, enzymatic discoloration, dark center or oxidation"
+      color_bgr: [0, 165, 255]    # Amber/Orange
+      is_defective: true
+      tolerance_pct_grade1: 2.0
+    3:
+      id: "moldy"
+      label: "Moldy / Insect Damaged"
+      description: "Fungal mycelium, mold spores, insect borehole, frass or rot"
+      color_bgr: [0, 0, 220]      # Red
+      is_defective: true
+      tolerance_pct_grade1: 1.0
+
+# Batch Commercial Grading Standards
+grading_standards:
+  grade_1:
+    title: "Grade 1 (Premium Export)"
+    max_total_defects_pct: 5.0
+    max_moldy_pct: 1.0
+    description: "Export quality kernel conforming to premium commercial trade thresholds."
+  commercial:
+    title: "Grade 2 (Commercial / Processing)"
+    max_total_defects_pct: 15.0
+    max_moldy_pct: 3.0
+    description: "Suitable for confectionery processing, paste, or oil extraction."
+  reject:
+    title: "Reject (Substandard)"
+    description: "Excessive defect rate exceeding maximum allowable commercial processing limits."
+
+# Models
+models:
+  detection:
+    type: "hybrid"  # "yolo_onnx", "yolo_pt", or "hybrid"
+    confidence_threshold: 0.35
+    iou_threshold: 0.45
+    weights_path: "src/models/weights/nut_detector.onnx"
+  classification:
+    type: "ensemble_onnx"  # "ensemble_onnx" or "deep_classifier"
+    confidence_threshold: 0.50
+    weights_path: "src/models/weights/defect_classifier.onnx"
+
+# Explainable AI (XAI)
+xai:
+  enabled: true
+  method: "gradcam_and_saliency"
+  colormap: "COLORMAP_JET"
+  alpha_overlay: 0.55
+  highlight_defect_contours: true
+  min_defect_area_pct: 0.015
+
+# Deployment Settings
+server:
+  host: "0.0.0.0"
+  port: 8000
+  cors_origins: ["*"]
+
+ui:
+  host: "0.0.0.0"
+  port: 8501

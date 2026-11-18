@@ -1,0 +1,30 @@
+# Core Scientific & Image Processing
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+pillow>=9.5.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+
+# Deep Learning & ONNX Inference
+onnxruntime>=1.16.0
+# Optional: torch & ultralytics (if running GPU fine-tuning)
+# torch>=2.0.0
+# torchvision>=0.15.0
+# ultralytics>=8.0.0
+
+# API & Backend
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+python-multipart>=0.0.6
+requests>=2.31.0
+pyyaml>=6.0
+
+# Frontend & Dashboard
+streamlit>=1.28.0
+altair>=5.0.0
+
+# Reporting
+reportlab>=3.6.0
